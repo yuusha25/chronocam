@@ -11,7 +11,7 @@ const LoginSuccess = () => {
     if (userId) {
       // Simpan id ke localStorage
       localStorage.setItem("userId", userId);
-
+      console.error("User ID not found in query parameters.");
       // Arahkan ke halaman utama
       navigate("/");
     } else {
