@@ -25,7 +25,7 @@ const SignUp = () => {
     console.log("Form submitted with:", formData);
 
     try {
-      const response = await fetch("http://localhost:8080/auth/signup", {
+      const response = await fetch("https://chrono-sand.vercel.app/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -116,7 +116,7 @@ const SignUp = () => {
         <div className="text-center mt-6">
           <p className="text-gray-400">or sign up with Google</p>
           <a
-            href="http://localhost:8080/auth/google"
+            href="https://chrono-sand.vercel.app/auth/google"
             className="mt-4 flex items-center justify-center w-full py-2 bg-gray-100 rounded text-gray-600 hover:bg-gray-200 transition duration-200"
           >
             <img
