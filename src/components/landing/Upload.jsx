@@ -61,18 +61,18 @@ const UploadForm = () => {
         return;
       }
     }
-
+ 
     const currentDate = new Date();
-    const formattedDate = format(currentDate, "dd-MM-yyyy");
-    const formattedTime = format(currentDate, "HH:mm");
+    // const formattedDate = format(currentDate, "dd-MM-yyyy");
+    // const formattedTime = format(currentDate, "HH:mm");
 
     const formData = new FormData();
     selectedFiles.forEach((file) => {
       formData.append("foto", file);
     });
     formData.append("userId", userId);
-    formData.append("date", formattedDate);
-    formData.append("time", formattedTime);
+    // formData.append("date", formattedDate);
+    // formData.append("time", formattedTime);
 
     setIsLoading(true);
 
