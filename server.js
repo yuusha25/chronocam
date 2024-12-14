@@ -29,7 +29,7 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV === "production"
-        ? "https://choronocam.vercel.app"
+        ? "https://chrono-sand.vercel.app"
         : "http://localhost:5173",
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
