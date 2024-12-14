@@ -13,7 +13,7 @@ passport.use(
       callbackURL:
         process.env.NODE_ENV === "production"
           ? "https://choronocam.vercel.app/auth/google/callback"
-          : "http://localhost:8080/auth/google/callback",
+          : "https://chrono-sand.vercel.app/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
