@@ -27,10 +27,7 @@ const app = express();
 // Middleware CORS
 app.use(
   cors({
-    origin:
-      process.env.NODE_ENV === "production"
-        ? "https://chrono-sand.vercel.app"
-        : "http://localhost:5173",
+    origin: "https://chrono-sand.vercel.app",
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
