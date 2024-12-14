@@ -10,7 +10,7 @@ const VerifyEmail = () => {
 
   const handleVerify = async () => {
     try {
-      const response = await fetch("http://localhost:8080/auth/verify-email", {
+      const response = await fetch("https://chrono-sand.vercel.app/auth/verify-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
