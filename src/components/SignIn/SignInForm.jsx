@@ -25,7 +25,7 @@ const SignIn = () => {
       if (response.ok) {
         // Simpan username ke localStorage
         localStorage.setItem("userId", data.user.id);
-        navigate("/");
+        navigate("https://chronocam.vercel.app/");
       } else {
         setError(data.message);
       }
